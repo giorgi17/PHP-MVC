@@ -10,7 +10,11 @@ function __construct( $tile ) {
 }
 
 public function index(){
-  return "Index Method";
+  /** Initializing a index.html view Found in (Views/index.html) **/
+  Init::view('main/data', array(
+  'posts' => ['post1','post2'],
+  'comments' => ['comment1','comment2']
+  ));
 }
 
 public function login(){

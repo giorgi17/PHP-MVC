@@ -6,4 +6,4 @@ function autoloader($classname) {
   $filename = __DIR__ . '/' . $directory . '.php';
   require_once($filename);
 }
-spl_autoload_register('autoloader'); ?>
+// spl_autoload_register('autoloader'); ?>
